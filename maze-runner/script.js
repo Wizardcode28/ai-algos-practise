@@ -126,6 +126,7 @@ async function dfs(currNode){
 
     for(let k=0;k<4;k++){
         if(target_reached) return
+
         let newrow= currrow+dirs[k]
         let newcol= currcol+dirs[k+1]
         
@@ -136,9 +137,10 @@ async function dfs(currNode){
             
             if(newcell==end) {
                 A[end].style.backgroundColor= "red"
-                
-                // await sleep(2000)
-                location.reload()
+                target_reached= true
+
+                await sleep(2000)
+                return
             }
 
             A[newcell].style.backgroundColor= "yellow"
@@ -151,6 +153,7 @@ async function dfs(currNode){
 
 function dfsViz(){
     dfs(start)
+    location.reload()
 }
 
 bfsbtn= document.getElementById("bfs")
