@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,aquamarine,rgb(109, 170, 122));
+}
+.game{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.title{
+    background:linear-gradient(to right,rgb(173, 196, 137),rgb(0, 128, 64));
+    font-size: 40px;
+}
+#container{
+    background-color:azure;
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+.box{
+    border: 1px solid rgb(161, 111, 111);
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 135px;
+}
+#start{
+    color: red;
+    font-size: 20px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+}
