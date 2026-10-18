@@ -110,6 +110,7 @@ async function astar(){
                 else if(current.g+1 < node.g) node.g=current.g+1, node.f= node.g+h  
 
                 A[newcell].style.backgroundColor= "yellow"
+                if(newcell==end) A[end].style.backgroundColor= "red"
             }
         }
     }
